@@ -63,7 +63,7 @@ public class Chord
     }
   }
 
-  fun void play( float duration )
+  fun void play( dur duration )
     {   
         SinOsc n1 => JCRev r1 => dac;
         SinOsc n2 => JCRev r2 => dac;
@@ -103,7 +103,7 @@ public class Chord
         mixLevel => r4.mix;
         mixLevel => r5.mix;
 
-        duration::second => now;
+        duration => now;
         0 => n1.gain;
         0 => n2.gain;
         0 => n3.gain;
