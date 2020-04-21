@@ -12,7 +12,7 @@
 // main performance script to control inputs, separating the concerns of scripted and live performance into threads at the top 
 
 Machine.add("utils/time.ck");
-Machine.add("utils/freqcalc.ck");             // Import the FreqCalc class module into the central namespace
+Machine.add("utils/frequency.ck");             // Import the FreqCalc class module into the central namespace
 Machine.add("utils/chord.ck");
 
 if( me.args() > 0 ) // If arguments are passed from the command line 
