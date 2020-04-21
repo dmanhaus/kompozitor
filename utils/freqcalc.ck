@@ -9,7 +9,7 @@ public class FreqCalc
         return root * Math.pow( a, halfSteps ); 
     }
 
-    fun void play_scale( float tonic, int notes[] )
+    fun void play_scale( float tonic, int notes[], dur noteDuration )
     {
         SinOsc note => dac;
         0.075 => note.gain;
@@ -22,7 +22,7 @@ public class FreqCalc
             <<< "interval:", i, "degrees:", notes[i], "freq:", interval >>>;
             
             // Play the interval
-            .375::second => now;
+            noteDuration => now;
         }
         0 => note.gain;
     }
