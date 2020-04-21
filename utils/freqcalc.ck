@@ -77,7 +77,7 @@ public class FreqCalc
             // <<< i, note, notes[i], notes[i] == note >>>;
             if( notes[ i ] == note ) 
             {
-            <<< notes[ i ] >>>;
+            // <<< notes[ i ] >>>;
             i => interval;
             }
         }
