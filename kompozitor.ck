@@ -11,6 +11,7 @@
 // Therefore, it is recommended that the performance script(s) control sporking, but it may make sense to run a separate
 // main performance script to control inputs, separating the concerns of scripted and live performance into threads at the top 
 
+Machine.add("utils/time.ck");
 Machine.add("utils/freqcalc.ck");             // Import the FreqCalc class module into the central namespace
 Machine.add("utils/chord.ck");
 
